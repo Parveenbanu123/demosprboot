@@ -1,12 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Index Page</title>
+</head>
 <body>
-	<h2>Hello World!</h2>
-	<form action="FS" method="get">
-		Customer Name:<input type="text" name="custname" /> 
-		Customer Password:<inputtype ="text" name="custpwd" />
-		<input type="submit" value="Submit" />
-	</form>
+	<% 
+		response.sendRedirect(request.getContextPath()+ "/registerpage");
+	%> 
 </body>
 </html>
